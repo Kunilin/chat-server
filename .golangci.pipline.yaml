@@ -14,6 +14,13 @@ run:
     - \.pb\.go$
     - \.pb\.gw\.go$
 
+runners:
+  telemetry:
+    enabled: true
+    args:
+      - --concurrency=0
+      - --skip-dirs=.golangci.cache,.git,.idea,.vscode,.build,.buildcache,.docker,.dockerenv,.dockerignore
+
 output:
   format: colored-line-number
   print-issued-lines: true
