@@ -5,7 +5,7 @@ install-golangci-lint:
 	GOBIN=$(LOCAL_BIN) go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 
 lint:
-	bin/golangci-lint run ./... --config /Users/user/go/src/gitlab.com/konfka/chat-server/.golangci.pipline.yaml
+	bin/golangci-lint run ./... --config .golangci.pipline.yaml
 
 install-deps:
 	GOBIN=$(LOCAL_BIN) go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28.1
