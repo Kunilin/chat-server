@@ -15,6 +15,7 @@ run:
     - \.pb\.gw\.go$
 
 
+
 output:
   format: colored-line-number
   print-issued-lines: true
