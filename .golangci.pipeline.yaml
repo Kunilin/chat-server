@@ -4,16 +4,15 @@ run:
   timeout: 10m
   issues-exit-code: 1
   tests: true
-  skip-dirs:
+  exclude-dirs:
     - bin
     - vendor
     - var
     - tmp
     - .cache
-  skip-files:
+  exclude-files:
     - \.pb\.go$
     - \.pb\.gw\.go$
-
 
 
 output:
@@ -23,7 +22,7 @@ output:
 
 linters-settings:
   govet:
-    check-shadowing: true
+    shadow: true
   dupl:
     threshold: 100
   goconst:
