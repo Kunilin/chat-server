@@ -2,11 +2,12 @@ package main
 
 import (
 	"context"
+	"log"
+	"time"
+
 	desc "gitlab.com/konfka/chat-server/pkg/chat_v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"log"
-	"time"
 )
 
 const address = "localhost:50051"
